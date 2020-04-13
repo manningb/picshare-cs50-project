@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    View Image
+{% endblock %}
+
+{% block main %}
+<h1>{{ filename }}</h1><br>
+<img style="position:absolute top: 315px;" src={{ photo }} alt="photo">
+<br><br>
+    <form style="position:relative" action="/viewed" method="post">
+        <div class="form-group">
+            <textarea class="form-control" rows="3" autocomplete="off" autofocus class="form-control" name="comment" placeholder="Comment" type="text"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}

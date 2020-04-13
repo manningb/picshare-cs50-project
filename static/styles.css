@@ -1,0 +1,101 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+.CarouselImg img {
+
+  max-height: 50%;
+  max-width: 50%;
+}
+
+body {
+  background-color: lightblue;
+  margin:0px;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  height: 50%;
+  width: 50;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn1 {
+  position: fixed;
+  top:20%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 12px;
+  padding: 12px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style the button and place it in the middle of the container/image */
+/*.container .btn2 {*/
+/*  position: absolute;*/
+/*  top: 85%;*/
+/*  left: 60%;*/
+/*  transform: translate(-50%, -50%);*/
+/*  -ms-transform: translate(-50%, -50%);*/
+/*  font-size: 12px;*/
+/*  padding: 12px 24px;*/
+/*  border: none;*/
+/*  cursor: pointer;*/
+/*  border-radius: 5px;*/
+/*}*/
+
+.carousel-control.left {
+  margin-left: -25px;
+}
+
+.carousel-control.right {
+  margin-right: -25px;
+}

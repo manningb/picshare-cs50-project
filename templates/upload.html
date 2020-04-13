@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Upload
+{% endblock %}
+
+{% block main %}
+<h1>Upload your image!</h1><br>
+		<form enctype="multipart/form-data" action="{{ url_for('upload') }}" method="post">
+			<input type="file" name='photo' accept="image/*" onchange="previewImage(event)"><br>
+			<br>
+			<input class="form-control" type="password" placeholder="Password"  name="password"></input>
+			<br><br>
+			<input type="submit" class="btn btn-light" value="Submit">
+		</form>
+		<br><br>
+		<div>
+		    <p style="display:none"; id="your-text">If this is the correct image, hit Submit above!</p>
+			<img style="display:none;" id="your-image"/>
+		</div>
+
+		<script>
+			var previewImage = function(event) {
+				var preview = document.getElementById('your-image');
+				preview.src = URL.createObjectURL(event.target.files[0]);
+				preview.style = "display=inline-block;width: 40%; image-orientation: inherit; height: auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+				var text = document.getElementById('your-text');
+				text.style = "display=inline-block"
+			};
+		</script>
+{% endblock %}
