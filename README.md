@@ -1,7 +1,7 @@
 # PICShare! - The Image Sharing Website
 
 <p align="center">
-![Screenshot](images/screencap.gif)
+<img src="images/screencap.gif">
 </p>
 
 ## Description
