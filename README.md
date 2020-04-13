@@ -1,6 +1,6 @@
 # PICShare! - The Image Sharing Website
 
-
+![Screenshot]()
 
 ## Description
 
