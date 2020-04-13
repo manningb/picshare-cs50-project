@@ -11,8 +11,6 @@ PICShare is an image sharing website which allows users to upload, store and sha
 - HTML, CSS, Javascript
 - Python, Flask
 
-[Back To The Top](#markdown-worksheet)
-
 ---
 
 ## How To Use
